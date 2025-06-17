@@ -18,16 +18,24 @@
     <title>SPA_IMC</title>
 </head>
 <body>
-    <header>
-        <h1>IMC</h1>
-    </header>
+    <h1>Calculadora de IMC</h1>
 
-    <main>
-        
-    </main>
+    <div class="inputs">
+        <div class="form-group">
+            <input type="number" id="peso" placeholder=" " required>
+            <label for="peso">Ingrese su peso</label>
+        </div>
 
-    <footer></footer>
+        <div class="form-group">
+            <input type="number" id="altura" placeholder=" " required>
+            <label for="altura">Ingrese su altura</label>
+        </div>
+    </div>
+    <div class="respuesta">
+    <button id="calcularBtn" onclick="calcularIMC()">Calcular IMC</button>
+    <p id="resultado"></p>
+    </div>
 
-    <script src="./SRC/js/main.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
